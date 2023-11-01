@@ -1,203 +1,134 @@
-##### [1] 팀원 정보 및 업무 분담
+## 🎬 영화 추천 사이트 Moolog
+
+![logo](./image/logo.png)
+
+    📌SSAFY 9기 1학기 관통프로젝트
+    📌23.05.17 ~ 23.05.26
+
+### 📑 목차
+
+1. 서비스 소개
+2. 기술 스택
+3. 아키텍처
+4. ERD
+5. 기능 살펴보기
+6. 팀원 소개 및 역할
+
+### 🔍 서비스 소개
+---
+> 사용자 취향 기반 영화 추천 및 영화 특화 SNS 프로젝트 입니다.
+
+많은 OTT 서비스들이 출시되어있는 현재 사람들은 무엇을 볼 지에 대해서 고민하는 시간이 점점 길어지고 있습니다. 너무 많은 선택권이 주어지다보니 오히려 선택이 힘들어지는 상황에 놓이게 되었습니다.이러한 사용자들의 고민을 덜어주고자 해당 프로젝트를 기획하게 되었습니다.<br>
+사용자가 좋아요를 누른 영화를 기반으로 장르를 분석하여 추천 알고리즘을 통해 10개의 영화를 추천해줍니다. 또한 본인이 좋아하는 사용자를 팔로우하여 사용자 간의 영화에 대한 인사이트를 나눌 수 있는 영화 특화 SNS 기능 또한 제공합니다.
+
+
+### 🔍 기술 스택
+---
+
+<table>
+<tr>
+ <td align="center">언어</td>
+ <td>
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=ffffff"/>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=Python&logoColor=white"/>
+    
+    
+ </td>
+</tr>
+<tr>
+ <td align="center">프레임워크</td>
+ <td>
+  <img src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=Django&logoColor=ffffff"/>
+    <img src="https://img.shields.io/badge/Vue-41B883?style=for-the-badge&logo=vue.js&logoColor=ffffff"/>  
+</tr>
+<tr>
+ <td align="center">라이브러리</td>
+ <td>
+<img src="https://img.shields.io/badge/vuetify-1867C0?style=for-the-badge&logo=Vuetify&logoColor=ffffff"/>
+<img src="https://img.shields.io/badge/bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=ffffff"/>
+<img src="https://img.shields.io/badge/vue router-41B883?style=for-the-badge&logo=&logoColor=ffffff"/>
+<img src="https://img.shields.io/badge/lodash-3492FF?style=for-the-badge&logo=lodash&logoColor=ffffff"/>
+<img src="https://img.shields.io/badge/axios-5A29E4?style=for-the-badge&logo=axios&logoColor=ffffff"/>
+<img src="https://img.shields.io/badge/django allauth-000000?style=for-the-badge&logo=django-allauth&logoColor=ffffff"/>
+
+</tr>
+<tr>
+ <td align="center">패키지 매니저</td>
+ <td>
+    <img src="https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white">
+  </td>
+</tr>
+<tr>
+ <td align="center">인프라</td>
+ <td>
+  <img src="https://img.shields.io/badge/Sqlite-003B57?style=for-the-badge&logo=SQlite&logoColor=ffffff"/>  
+</tr>
+<tr>
+ <td align="center">포맷팅</td>
+ <td>
+  <img src="https://img.shields.io/badge/ESLint-4B32C3?style=for-the-badge&logo=ESLint&logoColor=ffffff"/> 
+  <img src="https://img.shields.io/badge/Prettier-F7B93E?style=for-the-badge&logo=Prettier&logoColor=ffffff"/> 
+  </td>
+</tr>
+
+<tr>
+ <td align="center">협업툴</td>
+ <td>
+    <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=Git&logoColor=white"/>
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=white"/> 
+    <img src="https://img.shields.io/badge/Gitlab-FC6D26?style=for-the-badge&logo=Gitlab&logoColor=white"/> 
+    <img src="https://img.shields.io/badge/Mattermost-0058CC?style=for-the-badge&logo=Mattermost&logoColor=white"/> 
+ </td>
+</tr>
+<tr>
+ <td align="center">기타</td>
+ <td>
+    <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=Figma&logoColor=white"/>
+    <img src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=Notion&logoColor=white"/> 
+    <img src="https://img.shields.io/badge/swagger-85EA2D?style=for-the-badge&logo=swagger&logoColor=white"/>
+    <img src="https://img.shields.io/badge/postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white"/>
+ </td>
+</tr>
+</table>
+
+
+### 🔍 기능 살펴보기
+---
+🎥 로그인
+![로그인](./image/로그인.gif)
+
+🎥 회원가입
+![회원가입](./image/회원가입.gif)
 
------
+🎥 비밀번호 찾기
+![비밀번호 찾기](./image/비밀번호%20찾기.gif)
 
-- 이연지 (조장, 0929980)
-  
-  - Back End
-  
-  - Django model 및 serializer 작업 (모든 DB관련)
-  
-  - 사이트 CSS 작업
+🎥 메인화면(로그인X)
+![메인화면(로그인x)](./image/메인화면(로그인X).gif)
 
-- 조혜진 (0928085)
-  
-  - Front End
-  
-  - Vue.js를 이용하여 사이트에 DB 가져오기
-  
-  - 사이트 CSS 작업
+🎥 메인화면(로그인O)
+![메인화면(로그인O)](./image/메인화면(로그인O).gif)
 
-##### [2] 목표 서비스 구현 및 실제 구현 정도
+🎥 추천 영화(좋아요 누르기 전후) & 영화 검색
+![추천 영화(좋아요 누르기 전후) & 영화 검색](./image/영화%20좋아요%20전후%20및%20영화%20검색.gif)
 
------
+🎥 영화목록 호버
+![영화목록 호버](./image/영화목록%20호버.gif)
 
-- 목표 서비스 
-  
-  - account : 회원가입(+유효성 검사)/ 로그인, 로그아웃/ 회원탈퇴/ 비밀번호 찾기/소셜 로그인/ 팔로잉/ 프로필 수정(닉네임, 프로필 이미지)
-  
-  - movie & community : 현재 상영 영화, 상영 예정 영화 및 인기 영화 조회 및 상세정보 제공, 영화 좋아요 기능/ 영화 리뷰작성
+🎥 영화 상세페이지
+![영화 상세페이지](./image/영화%20상세페이지.gif)
 
-- 구현 정도
-  
-  - 대부분의 목표 서비스를 구현하였으나, 영화 리뷰 작성 시 삭제는 되지만 수정하는 기능은 구현하지 못하였습니다.
-  
-  - 소셜 로그인의 경우 구글 및 네이버사이트로 넘어가서 로그인 하는 것 까지는 성공했으나, 회원 정보를 받아 DB에 저장하지는 못하였습니다.
+🎥 마이프로필
+![마이프로필](./image/마이%20페이지(프로필%20이미지,%20닉네임%20변경).gif)
 
-##### [3] 데이터베이스 모델링(ERD) & 컴포넌트 구조
+🎥 게임 1 : 슬라이드 퍼즐게임
+![게임 1](./image/슬라이드%20퍼즐%20게임.gif)
 
------
+🎥 게임 2 : 같은 그림 찾기
+![게임 2](./image/같은%20그림%20찾기.gif)
 
-![](C:\Users\vvlov\Downloads\Final_Project_ERM.drawio.png)
-
-![](C:\Users\vvlov\Downloads\front%20component%20diagram.png)
-
-##### [4] 영화 추천 알고리즘
-
-----
-
-로그인을 한 후, 첫화면에서는 추천영화가 뜨지 않습니다.
-
-유저가 사이트를 이용하면서 마음에 드는 영화에 좋아요를 누르면 좋아요를 누른 영화와 동일한 장르를 가진 영화를 DB에서 추출하여 랜덤으로 메인화면에 띄어주게 됩니다.
-
-##### [5] 서비스 기능
-
-----
-
-[메인화면 (로그인 X)]
-
-![](C:\Users\vvlov\AppData\Roaming\marktext\images\2023-05-26-01-58-57-image.png)
-
-![](C:\Users\vvlov\AppData\Roaming\marktext\images\2023-05-26-02-00-16-image.png)
-
-![](C:\Users\vvlov\AppData\Roaming\marktext\images\2023-05-26-02-00-33-image.png)
-
-- 지금 MOOLOG를 즐겨보세요를 클릭하면 로그인 및 회원가입창이 뜨게 됩니다.
-
-- ID와 이메일은 DB에 동일한 정보가 있을시 가입이 되지 않습니다.
-
-- 두 비밀번호가 일치하지 않으면 가입이 되지 않습니다.
-
-![](C:\Users\vvlov\AppData\Roaming\marktext\images\2023-05-26-02-16-10-image.png)
-
-- 비밀번호를 잊었다면 이메일을 통해 찾을 수 있습니다.
-
-[메인화면 (로그인 O)]
-
-![](C:\Users\vvlov\AppData\Roaming\marktext\images\2023-05-26-02-02-25-image.png)
-
-- 영화에 좋아요를 누르기 전이기 때문에 추천영화가 뜨지 않습니다.
-
-- 검색창을 통해 영화 검색이 가능합니다.
-
-![](C:\Users\vvlov\AppData\Roaming\marktext\images\2023-05-26-02-03-32-image.png)
-
-- 좋아요를 누른 후에는 추천영화가 뜨게 됩니다.
-
-![](C:\Users\vvlov\AppData\Roaming\marktext\images\2023-05-26-02-06-14-image.png)
-
-- 메인화면에는 추천화면 뿐만아니라, 현재 상영영화 및 개봉 예정인 영화를 확인할 수 있습니다.
-
-![](C:\Users\vvlov\AppData\Roaming\marktext\images\2023-05-26-02-27-30-image.png)
-
-- 포스터에 마우스를 올릴시, 영화 제목과 평점, 상세정보를 볼 수있는 버튼이 나타나게 됩니다.
-
-![](C:\Users\vvlov\AppData\Roaming\marktext\images\2023-05-26-02-26-31-image.png)
-
-- 어떤 페이지에서든 로고를 누르면 랜덤영화를 추천받을 수 있습니다.
-
-- 포스터 이미지에 마우스를 올리면 줄거리를 제공합니다.
-
-![](C:\Users\vvlov\AppData\Roaming\marktext\images\2023-05-26-02-05-32-image.png)
-
-- 상세페이지 1
-
-- 영화에 대한 상세정보를 알 수 있습니다.
-
-- 장르, 개봉일, 줄거리를 알 수 있습니다.
-
-- 하트를 누르면 좋아하는 영화에 추가됩니다.
-
-![](C:\Users\vvlov\AppData\Roaming\marktext\images\2023-05-26-02-11-04-image.png)
-
-- 상세페이지 2
-
-- 유튜브 API를이용해서 공식 예고 영상을 불러옵니다. 
-
-![](C:\Users\vvlov\AppData\Roaming\marktext\images\2023-05-26-02-12-54-image.png)
-
-- 상세페이지 3
-
-- 사용자들은 영화에 대해 리뷰를 남길 수 있습니다.
-
-- 컨셉에 맞게 채팅하는듯한 느낌을 주기 위해 디자인하였습니다.
-
-- 리뷰를 적지 않거나 별점을 선택하지 않으면 작성이 되지 않습니다.
-
-- 사용자를 누르면 유저페이지로 이동할 수 있습니다.
-
-![](C:\Users\vvlov\AppData\Roaming\marktext\images\2023-05-26-02-19-18-image.png)
-
-- 사용자 페이지 1
-
-- 좋아요한 영화 및 리뷰의 갯수를 확인할 수 있습니다.
-
-- 팔로워와 팔로잉 수를 확인할 수 있습니다.
-
-- 타유저가 팔로우/언팔로우가 가능합니다.
-
-![](C:\Users\vvlov\AppData\Roaming\marktext\images\2023-05-26-02-20-07-image.png)
-
-- 사용자 페이지 2
-
-- 유저가 좋아한 영화 및 리뷰의 내용을 확인할 수 있습니다.
-
-![](C:\Users\vvlov\AppData\Roaming\marktext\images\2023-05-26-02-21-50-image.png)
-
-- 회원정보수정 페이지에서 유저 이미지, 닉네임 및 이메일을 통한 비밀번호 변경이 가능합니다.
-
-- 회원탈퇴 기능도 넣었습니다.
-
-![](C:\Users\vvlov\AppData\Roaming\marktext\images\2023-05-26-02-22-55-image.png)
-
-- 마이프로필 1
-
-- 유저페이지와 마찬가지로 좋아한 영화, 리뷰, 팔로워 및 팔로잉 수를 확인할 수 있습니다.
-
-![](C:\Users\vvlov\AppData\Roaming\marktext\images\2023-05-26-02-23-33-image.png)
-
-- 마이프로필 2
-
-- 본인이 좋아요를 누른 영화와 리뷰를 확인할 수 있습니다.
-
-![](C:\Users\vvlov\AppData\Roaming\marktext\images\2023-05-26-02-24-04-image.png)
-
-- 마이프로필 3
-
-- 팔로잉한 사람들의 최신 리뷰를 확인할 수 있습니다.
-
-![](C:\Users\vvlov\AppData\Roaming\marktext\images\2023-05-26-02-28-19-image.png)
-
-- 게임1 (슬라이드 퍼즐게임)
-
-![](C:\Users\vvlov\AppData\Roaming\marktext\images\2023-05-26-02-28-50-image.png)
-
-- 게임2 (같은 그림 찾기 게임)
-
-- 사용자의 재미를 위해 두 가지 게임을 넣었습니다.
-
-##### [6] 후기
-
-----
-
-###### 이연지
-
-  이번 관통 프로젝트를 진행하면서 처음으로 DB 설계를 하게 되었다. 이전까지의 실습들과 관통 프로젝트들은 명세서에 이미 model 설계까지 되어있었기 때문에 기능적인 면에 치우쳐져서 실습을 했었다. 그래서 서비스를 기획하는 단계가 가장 오래 걸리고 어렵다는 교수님의 말씀을 체감하지 못하고 있었는데 이번 기회에 확실히 가장 어려운 단계인 것을 느끼게 되었다.
-
-vue의 components나 views 같은 경우에도 대략적인 설계를 해놓고 진행하였으나 실제로 기획 단계에서 구상했던 것보다 훨씬 더 많이 추가되고 변경되면서 수정사항이 많이 생겼다. 그래서 나중에는 파일이 너무 많아져서 어디에 이 vue 파일이 위치하고 있는지 찾기 위해 애를 먹었다. 그래서 구상하려는 웹 사이트의 규모가 클수록 module화를 시켜서 기능별로 아니면 view 파일 별로 구분해놓는 것이 수월하다고 느꼈다.
-
-django와 vue 모두 기존에 존재하는 다양한 라이브러리들을 이용해서 원하는 기능들을 구현했다. 특히 vue에서는 front 쪽이다보니 꾸미는 것과 관련된 다양한 라이브러리들이 있어서 찾아볼수록 css에 욕심이 생겼다. 마지막에 시간에 쫓기듯이 css를 마무리 지은 감이 있어서 마음에 좀 걸리긴 하지만 약 10일 정도의 기간 동안 하나의 웹사이트를 만들었다는 경험은 정말 뿌듯하고 방학동안 다른 토이프로젝트를 할 수 있는 자신감을 만들어 준 좋은 경험이라고 생각한다.
-
-
-
-###### 조혜진
-
- 여태 해온 관통프로젝트들은 대부분 스켈레톤 코드가 주어져 수월하게 작업을 해왔다면, 이번 프로젝트는 제로베이스+간단한 명세로만 이뤄져있어서 고민을 많이 했던것 같다. 시작 전부터 교수님께서 기획 단계를 잘해야한다고 당부하셔서 최대한 꼼꼼하게 db설계작업과 컴포넌트 구조 설계를 하려고 했는데, 제법 규모가 있는 사이트를 직접만들어 본 경험은 없었기 때문에 설계 작업이 쉽지않았다. 페어에게 받은 db를 통해 vue를 구상하면 할수록 처음 생각했던 컴포넌트의 수보다 훨씬 배로 늘어났고, 모듈의 갯수도 늘어나서 관리하는게 어려움을 느꼈고, 사전 설계 작업이 굉장히 중요하고, 다음에 프로젝트를 한다면 더 꼼꼼하게 설계를 해야겠다는 생각이 들었다. 
-
- 사이트를 만드는 것이 처음이고, 생각한 기능의 구현이 쉽지 않아 지난 시간동안 인터넷을 통해 레퍼런스를 많이 보게 되었다. 사람들의 코드는 한눈에 들어오고 간결했었는데, 그런 코드를 보면서 더 많이 경험하고 코딩을 해야겠다는 생각이 들었다. 
-
- 모든 데이터를 사이트로 가져오고 CSS로 사이트를 꾸밀때는 직접 내 두눈으로 CSS 결과물을 확인할 수 있고, 또 사이트의 제작자인 동시에 사용자가 될 수 있기 때문에 디자인적인 요소에 욕심이 많이 생겼다. CSS 또한 다양한 레퍼런스를 많이 접하며 디자인 하려하였으며, Figma를 이용해 대략적으로 사이트를 구상한 후 사이트에 최대한 비슷하게 옮겨오려고 노력하였다. 사이트의 컨셉이 '대화', '채팅' 이다보니 리뷰를 띄어주는 채팅방 디자인에 신경을 많이 썼는데, 생각한만큼의 결과물이 나와서 뿌듯했다.
-
- 프로젝트 동안 백엔드에 해당하는 Django는 든든한 페어가 다해줬기 때문에, 내가 손댄 것은 하나도 없었다. 같이 참여한 프로젝트임에도 불구하고 DB를 가져오는 과정을 제대로 알지 못하는 것이 이번 프로젝트의 최대 아쉬운점이다. 기간이 끝나고 난 뒤, 코드를 살펴보며 알아가봐야겠다. 
-
- 끝에는 정신없이 CSS에 온 정신을 쏟으며 프로젝트를 마무리한 것 같다. 약 열흘정도의 시간 동안 사이트를 만드는게 가능할까 생각했지만, 시간과 정성 앞에선 모든게 가능했다. 프로젝트는 끝이 났지만 다음 2학기를 위해 더 공부하는 시간을 가져야겠다.
+### 🧚‍♀️팀원 소개 및 역할
+| 이름   | 기능 및 역할 |
+| ----|--------------------------------------------------------------------------- |
+| 이연지 |  팀장, BackEnd(회원가입, 로그인, 비밀번호 찾기(이메일 인증), 외부 API 통신, 더미데이터 형성, 영화 조회, 영화 추천 알고리즘, 영화 검색 기능)</br>FrontEnd(메인페이지 - 로그인 유무에 따른 분기 처리, 영화 목록, 영화 검색, 이스터 에그, 게임 페이지 CSS, 유저 정보 페이지)|
+| 조혜진 |  팀원, FrontEnd </br> REST API 적용 로그인, 회원가입, 팔로잉 및 영화 좋아요 기능, 유튜브 API 영화 예고편, 영화 상세페이지, 게임 기능 구현 |
