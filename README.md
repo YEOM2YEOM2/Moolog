@@ -1,6 +1,6 @@
 ## 🎬 영화 추천 사이트 Moolog
 
-![logo](./image/logo.png)
+<p align="center"><img src="./image/logo.png"/></p>
 
     📌SSAFY 9기 1학기 관통프로젝트
     📌23.05.17 ~ 23.05.26
